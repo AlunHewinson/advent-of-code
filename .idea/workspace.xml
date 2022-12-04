@@ -5,15 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0be94fdd-e025-43fe-ae36-0e5dde705ede" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/scala/aoc2022/day1.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/aoc2022/day2.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/2022/day01.txt" beforeDir="false" afterPath="$PROJECT_DIR$/input/2022/day1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/2022/day02.txt" beforeDir="false" afterPath="$PROJECT_DIR$/input/2022/day2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/aoc2022/day01.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/aoc2022/day02.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/aoc2022/day03.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/aoc2022/day3.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/aoc2022/day04.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/aoc2022/day4.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/aoc2022/day1.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/aoc2022/day1.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/aoc2022/day2.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/aoc2022/day2.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/aoc2022/day3.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/aoc2022/day3.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/aoc2022/day4.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/aoc2022/day4.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

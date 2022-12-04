@@ -2,17 +2,14 @@ package aoc2022
 
 import utils.utils.readDay
 
-import scala.io.Source
-import scala.util.Using
-
 object day1 extends App {
   // https://adventofcode.com/2022/day/1
 
   def solveDay(day: Int, test: Boolean = false): (Int, Int) = {
-    val day01: String = readDay(day, test)
-    val elfSeparator: String = "\n\n"
-    val itemSeparator: String = "\n"
-    val elves: Array[String] = elfSeparator.r.split(day01)
+    val inp: String = readDay(day, test)
+    val elfSeparator: String = "(\r*\n){2,}"
+    val itemSeparator: String = "\r*\n"
+    val elves: Array[String] = elfSeparator.r.split(inp)
     val snacks: Array[Int] = elves.map(elf => {
       val stringItems: Array[String] = itemSeparator.r.split(elf)
       stringItems.map(_.toInt).sum
