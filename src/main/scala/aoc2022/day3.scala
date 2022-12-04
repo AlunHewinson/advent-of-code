@@ -13,7 +13,7 @@ object day3 extends App {
       val elf1: Array[Char] = x.slice(0, xl/2)
       val elf2: Array[Char] = x.slice(xl/2, xl)
       val overlap: Int = (elf1 intersect elf2).map(_.toInt).min
-      (overlap-38) % 58
+      (overlap-38) % 58 // evil hack!
     })
     (intersects.sum, 98)
   }
