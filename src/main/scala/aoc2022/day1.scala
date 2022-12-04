@@ -1,14 +1,15 @@
 package aoc2022
 
+import utils.utils.readDay
+
 import scala.io.Source
 import scala.util.Using
 
-object day01 extends App {
+object day1 extends App {
   // https://adventofcode.com/2022/day/1
 
-  def solveDay01(test: Boolean = false): (Int, Int) = {
-    val inputFile: String = s"input/2022/day01${if (test) "test" else ""}.txt"
-    val day01: String = Using(Source.fromFile(inputFile)) { source => source.mkString }.get
+  def solveDay(day: Int, test: Boolean = false): (Int, Int) = {
+    val day01: String = readDay(day, test)
     val elfSeparator: String = "\n\n"
     val itemSeparator: String = "\n"
     val elves: Array[String] = elfSeparator.r.split(day01)
@@ -18,5 +19,6 @@ object day01 extends App {
     })
     (snacks.max, snacks.sorted(Ordering.Int.reverse).take(3).sum)
   }
-  println(solveDay01())
+  println(solveDay(1, true))
+  println(solveDay(1))
 }
