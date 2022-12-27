@@ -10,9 +10,18 @@ object day2 extends App {
     val inp: String = readDay(day, test, 2017)
     val rowStrings: Seq[String] = "(\r*\n)".r.split(inp).toSeq
 
-    rowStrings.foreach(println)
+    val rows = rowStrings.map(row => {
+      row.split("[ \t]+").map(_.toInt)
+    })
 
-    (98, 98)
+    val a1 = rows.map(values => values.max - values.min)
+
+    val a2 = rows.map(row => {
+      val combos = row.combinations(2)
+      combos.map(toVals => if (toVals.max % toVals.min == 0) toVals.max / toVals.min else 0).sum
+    })
+
+    (a1.sum, a2.sum)
   }
   println(solveDay(day = 2, test = true))
   println(solveDay(day = 2, test = false))
