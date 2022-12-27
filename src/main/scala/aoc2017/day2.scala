@@ -7,7 +7,7 @@ object day2 extends App {
   // https://adventofcode.com/2017/day/2
 
   def solveDay(day: Int, test: Boolean = false): (Int, Int) = {
-    val inp: String = readDay(day, test)
+    val inp: String = readDay(day, test, 2017)
     val rowStrings: Seq[String] = "(\r*\n)".r.split(inp).toSeq
 
     rowStrings.foreach(println)
