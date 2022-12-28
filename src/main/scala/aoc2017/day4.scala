@@ -18,11 +18,6 @@ object day4 extends App {
     val a1ValidPhrases: Seq[Seq[String]] = phrases.filter(words => words.length == words.toSet.count(_ => true))
     val a1 = a1ValidPhrases.length
 
-    val tst = phrases.map(words => {
-      val yoyo = words.map(alphabetise)
-      yoyo
-    })
-
     val a2ValidPhrases = phrases.filter(words => words.length == words.map(alphabetise).toSet.count(_ => true))
     val a2 = a2ValidPhrases.length
 
