@@ -1,7 +1,6 @@
 package aoc2017
 
 import utils.utils._
-
 import scala.annotation.tailrec
 
 object day6 extends App {
@@ -49,7 +48,7 @@ object day6 extends App {
     val inp: String = readDay(day, test, 2017)
     val banks: Seq[Int] = "(\r*\n)".r.split(inp).toSeq.head.split("[ \t]+").map(_.toInt).toSeq
 
-    val bankStrings = redistributeCycle(banks)
+    val bankStrings: Seq[String] = redistributeCycle(banks)
     val repeatedBank: String = bankStrings.last
     val banksIndices: Seq[Int] = bankStrings.dropRight(1).zipWithIndex map {
       case (bank, i) if bank == repeatedBank => i
