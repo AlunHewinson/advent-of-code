@@ -43,6 +43,7 @@ object utils {
     def p(): Unit = println(this.row.toString + "," + this.column.toString)
     def mk(): String = this.row.toString + "," + this.column.toString
     def distance(other: Coord): Coord = Coord(math.abs(this.row - other.row), math.abs(this.column - other.column))
+    def manhattenMagnitude(): Int = this.row + this.column
   }
 
 
